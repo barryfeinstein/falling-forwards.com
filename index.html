@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Falling Forwards</title>
+<style type="text/css">
+a:link {
+	color: #FFF;
+	opacity: .5;
+	padding:inherit;
+	
+	
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+	opacity: .5;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+	opacity: .5;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+body,td,th {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100px;
+	color: #FFF;
+	font-weight: bold;
+	text-align:center;
+	line-height:150px;
+	letter-spacing: 5px}
+.container{
+	vertical-align:middle;
+	border: 3px solid white;
+	margin: 0;
+    position: absolute;
+	text-align:center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	display:block;
+	height: 500px;
+	width: 650px;
+	
+}
+
+body {
+	background-image: url(http://www.falling-forwards.com/004_3A.JPG);
+	background-repeat:no-repeat;
+	width:100%;
+	background-position:center;
+	background-attachment:fixed;
+	background-size:100% auto;
+	height:auto
+}
+</style>
+</head>
+
+<body>
+
+<style>
+span {  position: absolute;
+	text-align:center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	}
+.shh, .lst, a:hover span { display: none }
+a:hover .shh { display: inline-block; transition:1s; }
+a:active span {display: none}
+a:active .shh {display:none}
+.shh, a:visited span {display:none}
+a:visited .lst {display:inline-block; transition-delay:1s;}
+a:active .lst {display: inline-block; vertical-align: bottom; transition-delay:1s;}
+
+</style>
+<style type="text/javascript">
+$("#lst").click(function() {
+  $("#lst").css("display","+=inline-block");
+});
+</style>
+<a href="main.html"><div class="container">
+	<span><img src="http://www.falling-forwards.com/Falling-Forwards-Logo.png" width="auto" height="auto" />  </span>
+	<span class="shh">RETURNING SOON</span>
+    <span class="lst">RETURNING SOON</span>
+
+</div></a>
+</body>
+</html>
